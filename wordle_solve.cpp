@@ -28,7 +28,7 @@ int main()
 	}
 	fin.close();
 	string a,b="NNNNN";
-	string guess="crage";	//first guess is "salet"
+	string guess="crane";	//first guess is "salet"
 	cout<<guess<<endl;
 	while(1)
 	{
@@ -49,17 +49,27 @@ int main()
 							b[j]='B';
 				}	
 			}
-			
 			if(a==b)
+				continue;
+			wordlist[i]="\0";
+		}
+		for(int i=0;i<12948;i++)
+			if(wordlist[i]!="\0")
 			{
 				guess=wordlist[i];
 				cout<<guess<<endl;
 				break;
 			}
-			wordlist[i]="\0";
-		}
 	}
 	return 0;
 		
 	
  } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
